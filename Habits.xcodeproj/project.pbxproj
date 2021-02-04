@@ -35,8 +35,6 @@
 		7D49153F25B5CA5C00323B77 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D49152D25B5CA5C00323B77 /* CalendarView.swift */; };
 		7D49154025B5CA5C00323B77 /* HabitCalendarInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D49152F25B5CA5C00323B77 /* HabitCalendarInformation.swift */; };
 		7D49154125B5CA5C00323B77 /* HabitCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D49153025B5CA5C00323B77 /* HabitCalendarView.swift */; };
-		7D49154225B5CA5C00323B77 /* HabitCircleSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D49153225B5CA5C00323B77 /* HabitCircleSwiftUIView.swift */; };
-		7D49154425B5CA5C00323B77 /* HabitButtonSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D49153425B5CA5C00323B77 /* HabitButtonSwiftUIView.swift */; };
 		7D49154525B5CA5C00323B77 /* AnimationCompletionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D49153525B5CA5C00323B77 /* AnimationCompletionModifier.swift */; };
 		7D49154625B5CA5C00323B77 /* AddRemoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D49153625B5CA5C00323B77 /* AddRemoveView.swift */; };
 		7D49154725B5CA5C00323B77 /* SwipeableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D49153725B5CA5C00323B77 /* SwipeableView.swift */; };
@@ -48,6 +46,10 @@
 		7D8AD15025B70132009B69BB /* HabitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8AD14F25B70132009B69BB /* HabitDetailView.swift */; };
 		7D92F08E25C1877600552EA1 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D92F08D25C1877600552EA1 /* URLExtension.swift */; };
 		7D92F09525C18A9600552EA1 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D92F09425C18A9600552EA1 /* CloudKit.framework */; };
+		7DC6986325CC159700E5F20D /* HabitCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC6986225CC159700E5F20D /* HabitCircleView.swift */; };
+		7DC6986625CC15AF00E5F20D /* HabitInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC6986525CC15AF00E5F20D /* HabitInformation.swift */; };
+		7DC6986925CC183000E5F20D /* DayInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC6986825CC183000E5F20D /* DayInformation.swift */; };
+		7DC6986C25CC19BB00E5F20D /* HabitButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC6986B25CC19BB00E5F20D /* HabitButtonStyle.swift */; };
 		7DE120AD25B8548D005335D4 /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE120AC25B8548D005335D4 /* ColorHelper.swift */; };
 		7DE120B025B99B08005335D4 /* GoalPeriodHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE120AF25B99B08005335D4 /* GoalPeriodHelper.swift */; };
 		7DE120B525B9C2B0005335D4 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE120B425B9C2B0005335D4 /* Line.swift */; };
@@ -85,8 +87,6 @@
 		7D49152D25B5CA5C00323B77 /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		7D49152F25B5CA5C00323B77 /* HabitCalendarInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitCalendarInformation.swift; sourceTree = "<group>"; };
 		7D49153025B5CA5C00323B77 /* HabitCalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitCalendarView.swift; sourceTree = "<group>"; };
-		7D49153225B5CA5C00323B77 /* HabitCircleSwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitCircleSwiftUIView.swift; sourceTree = "<group>"; };
-		7D49153425B5CA5C00323B77 /* HabitButtonSwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitButtonSwiftUIView.swift; sourceTree = "<group>"; };
 		7D49153525B5CA5C00323B77 /* AnimationCompletionModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationCompletionModifier.swift; sourceTree = "<group>"; };
 		7D49153625B5CA5C00323B77 /* AddRemoveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRemoveView.swift; sourceTree = "<group>"; };
 		7D49153725B5CA5C00323B77 /* SwipeableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableView.swift; sourceTree = "<group>"; };
@@ -99,6 +99,10 @@
 		7D92F08D25C1877600552EA1 /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
 		7D92F09125C18A3500552EA1 /* Habits.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Habits.entitlements; sourceTree = "<group>"; };
 		7D92F09425C18A9600552EA1 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		7DC6986225CC159700E5F20D /* HabitCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCircleView.swift; sourceTree = "<group>"; };
+		7DC6986525CC15AF00E5F20D /* HabitInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitInformation.swift; sourceTree = "<group>"; };
+		7DC6986825CC183000E5F20D /* DayInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayInformation.swift; sourceTree = "<group>"; };
+		7DC6986B25CC19BB00E5F20D /* HabitButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitButtonStyle.swift; sourceTree = "<group>"; };
 		7DE120AC25B8548D005335D4 /* ColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
 		7DE120AF25B99B08005335D4 /* GoalPeriodHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalPeriodHelper.swift; sourceTree = "<group>"; };
 		7DE120B425B9C2B0005335D4 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
@@ -124,6 +128,7 @@
 				7D49153525B5CA5C00323B77 /* AnimationCompletionModifier.swift */,
 				7D49153725B5CA5C00323B77 /* SwipeableView.swift */,
 				7DE120B425B9C2B0005335D4 /* Line.swift */,
+				7DC6986B25CC19BB00E5F20D /* HabitButtonStyle.swift */,
 			);
 			path = HelperViews;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 				7D15BC9125B71EEA00185143 /* HabitHomeView.swift */,
 				7D15BC9725B71F8100185143 /* HabitDailyCircleView.swift */,
 				7DE120B725B9C7CE005335D4 /* HabitListView.swift */,
+				7DC6986225CC159700E5F20D /* HabitCircleView.swift */,
 			);
 			path = HabitHomeView;
 			sourceTree = "<group>";
@@ -189,8 +195,8 @@
 				7D92F09125C18A3500552EA1 /* Habits.entitlements */,
 				7D4914BF25B5C5D000323B77 /* HabitsApp.swift */,
 				7D4914C125B5C5D000323B77 /* ContentView.swift */,
+				7DC6986025CC150500E5F20D /* Model */,
 				7D611EC425B605AD00A966C5 /* SwiftUIViews */,
-				7D49152325B5CA5C00323B77 /* SwiftUI */,
 				7D4914FF25B5C74700323B77 /* Old.swift */,
 				7D37F4EA25B6E57200887DE6 /* ColorPickerColors.xcassets */,
 				7D4914C325B5C5D300323B77 /* Assets.xcassets */,
@@ -251,23 +257,6 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		7D49152325B5CA5C00323B77 /* SwiftUI */ = {
-			isa = PBXGroup;
-			children = (
-				7D49153125B5CA5C00323B77 /* HabitSwiftUI */,
-			);
-			path = SwiftUI;
-			sourceTree = "<group>";
-		};
-		7D49152825B5CA5C00323B77 /* ChartSwiftUI */ = {
-			isa = PBXGroup;
-			children = (
-				7D49152A25B5CA5C00323B77 /* ChartInformation.swift */,
-				7D49152925B5CA5C00323B77 /* ChartView.swift */,
-			);
-			path = ChartSwiftUI;
-			sourceTree = "<group>";
-		};
 		7D49152B25B5CA5C00323B77 /* CalendarView */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,24 +264,6 @@
 				7D49152D25B5CA5C00323B77 /* CalendarView.swift */,
 			);
 			path = CalendarView;
-			sourceTree = "<group>";
-		};
-		7D49152E25B5CA5C00323B77 /* CalendarSwiftUI */ = {
-			isa = PBXGroup;
-			children = (
-				7D49152F25B5CA5C00323B77 /* HabitCalendarInformation.swift */,
-				7D49153025B5CA5C00323B77 /* HabitCalendarView.swift */,
-			);
-			path = CalendarSwiftUI;
-			sourceTree = "<group>";
-		};
-		7D49153125B5CA5C00323B77 /* HabitSwiftUI */ = {
-			isa = PBXGroup;
-			children = (
-				7D49153225B5CA5C00323B77 /* HabitCircleSwiftUIView.swift */,
-				7D49153425B5CA5C00323B77 /* HabitButtonSwiftUIView.swift */,
-			);
-			path = HabitSwiftUI;
 			sourceTree = "<group>";
 		};
 		7D49154A25B5CAAB00323B77 /* Helper */ = {
@@ -323,10 +294,7 @@
 			children = (
 				7D611EC825B6072000A966C5 /* HabitDetailListView.swift */,
 				7D8AD14F25B70132009B69BB /* HabitDetailView.swift */,
-				7D49153625B5CA5C00323B77 /* AddRemoveView.swift */,
-				7D49153825B5CA5C00323B77 /*  StreakView.swift */,
-				7D49152825B5CA5C00323B77 /* ChartSwiftUI */,
-				7D49152E25B5CA5C00323B77 /* CalendarSwiftUI */,
+				7DC6986125CC154100E5F20D /* Sub Views */,
 			);
 			path = HabitDetailView;
 			sourceTree = "<group>";
@@ -337,6 +305,28 @@
 				7D92F09425C18A9600552EA1 /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DC6986025CC150500E5F20D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7D49152A25B5CA5C00323B77 /* ChartInformation.swift */,
+				7D49152F25B5CA5C00323B77 /* HabitCalendarInformation.swift */,
+				7DC6986525CC15AF00E5F20D /* HabitInformation.swift */,
+				7DC6986825CC183000E5F20D /* DayInformation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7DC6986125CC154100E5F20D /* Sub Views */ = {
+			isa = PBXGroup;
+			children = (
+				7D49153625B5CA5C00323B77 /* AddRemoveView.swift */,
+				7D49153825B5CA5C00323B77 /*  StreakView.swift */,
+				7D49152925B5CA5C00323B77 /* ChartView.swift */,
+				7D49153025B5CA5C00323B77 /* HabitCalendarView.swift */,
+			);
+			path = "Sub Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,6 +408,7 @@
 				7D49154825B5CA5C00323B77 /*  StreakView.swift in Sources */,
 				7D49150E25B5C8D400323B77 /* CDHabitEntry+CoreDataProperties.swift in Sources */,
 				7D37F4F525B6F9DE00887DE6 /* NewHabitView.swift in Sources */,
+				7DC6986C25CC19BB00E5F20D /* HabitButtonStyle.swift in Sources */,
 				7D49154E25B5CAAB00323B77 /* SymbolHelper.swift in Sources */,
 				7D4914C925B5C5D300323B77 /* Persistence.swift in Sources */,
 				7D49153F25B5CA5C00323B77 /* CalendarView.swift in Sources */,
@@ -436,17 +427,18 @@
 				7D15BC9225B71EEA00185143 /* HabitHomeView.swift in Sources */,
 				7D49153E25B5CA5C00323B77 /* CalendarInformation.swift in Sources */,
 				7D49154D25B5CAAB00323B77 /* HapticFeedbackHelper.swift in Sources */,
+				7DC6986925CC183000E5F20D /* DayInformation.swift in Sources */,
 				7DE120B825B9C7CE005335D4 /* HabitListView.swift in Sources */,
 				7D49150025B5C74700323B77 /* Old.swift in Sources */,
 				7D49151025B5C8D400323B77 /* Habits.xcdatamodeld in Sources */,
 				7D49154525B5CA5C00323B77 /* AnimationCompletionModifier.swift in Sources */,
+				7DC6986325CC159700E5F20D /* HabitCircleView.swift in Sources */,
 				7D611EC225B605A100A966C5 /* EditHabitView.swift in Sources */,
 				7DE120B025B99B08005335D4 /* GoalPeriodHelper.swift in Sources */,
-				7D49154225B5CA5C00323B77 /* HabitCircleSwiftUIView.swift in Sources */,
 				7D4914C025B5C5D000323B77 /* HabitsApp.swift in Sources */,
 				7D8AD15025B70132009B69BB /* HabitDetailView.swift in Sources */,
-				7D49154425B5CA5C00323B77 /* HabitButtonSwiftUIView.swift in Sources */,
 				7D92F08E25C1877600552EA1 /* URLExtension.swift in Sources */,
+				7DC6986625CC15AF00E5F20D /* HabitInformation.swift in Sources */,
 				7D49154125B5CA5C00323B77 /* HabitCalendarView.swift in Sources */,
 				7D49153D25B5CA5C00323B77 /* ChartInformation.swift in Sources */,
 				7D49151225B5C8D400323B77 /* CDHabit+CoreDataProperties.swift in Sources */,

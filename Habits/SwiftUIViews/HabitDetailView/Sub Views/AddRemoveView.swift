@@ -32,7 +32,7 @@ struct HabitAddRemoveView: View {
                     }
                 }
                 
-                UpdatingHabitCircleView(cdHabit: cdHabit, circleSize: geometry.size.height, updateAction: updateAction)
+                HabitCircleView(circleSize: geometry.size.height, habitInformation: HabitInformation(cdHabit: cdHabit))
             
                 GeometryReader {geometry in
                     ZStack {

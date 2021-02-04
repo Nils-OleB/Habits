@@ -63,7 +63,7 @@ private struct HabitDetailsListItem: View {
                 .cornerRadius(10)
             
             HStack(spacing: 10) {
-                UpdatingHabitCircleView(cdHabit: cdHabit, circleSize: 70, updateAction: updateAction)
+                HabitCircleView(circleSize: 70, habitInformation: HabitInformation(cdHabit: cdHabit))
                 Text(cdHabit.titel ?? "")
                     .font(.title)
                     .bold()
