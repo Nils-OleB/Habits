@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20C69" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="CDHabit" representedClassName=".CDHabit" syncable="YES">
+        <attribute name="colorName" optional="YES" attributeType="String"/>
+        <attribute name="creationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="goal" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="goalPeriod" optional="YES" attributeType="String"/>
+        <attribute name="internal_id" optional="YES" attributeType="String"/>
+        <attribute name="position" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="symbolName" optional="YES" attributeType="String"/>
+        <attribute name="titel" optional="YES" attributeType="String"/>
+        <relationship name="entrys" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDHabitEntry" inverseName="habit" inverseEntity="CDHabitEntry"/>
+    </entity>
+    <entity name="CDHabitEntry" representedClassName=".CDHabitEntry" syncable="YES">
+        <attribute name="creationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dayString" optional="YES" attributeType="String"/>
+        <relationship name="habit" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDHabit" inverseName="entrys" inverseEntity="CDHabit"/>
+    </entity>
+    <elements>
+        <element name="CDHabit" positionX="-63" positionY="-18" width="128" height="164"/>
+        <element name="CDHabitEntry" positionX="-63" positionY="9" width="128" height="74"/>
+    </elements>
+</model>
