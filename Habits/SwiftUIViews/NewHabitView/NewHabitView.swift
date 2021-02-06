@@ -26,13 +26,14 @@ struct NewHabitView: View {
                 },
                 label: {
                     GeometryReader { geometry in
-                        Text("Create custom habit")
+                        Text("create custom habit")
                             .padding()
                             .frame(width: geometry.size.width, height: 50)
                             .background(Color.gray.opacity(0.2))
                             .cornerRadius(10)
                             .font(.system(size: 25, weight: .bold))
                             .foregroundColor(Color(.label))
+                            .minimumScaleFactor(0.5)
                     }
                 })
                 .fullScreenCover(isPresented: $editHabitViewVisible,

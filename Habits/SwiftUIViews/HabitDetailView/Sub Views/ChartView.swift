@@ -17,9 +17,9 @@ struct ChartView: View {
             Picker(selection: .init(get: { chartInformation.chartRange },
                                     set: { chartInformation.chartRange = $0}),
                    label: EmptyView()) {
-                Text("Week").tag(Date.DateComponent.week)
-                Text("Month").tag(Date.DateComponent.month)
-                Text("Year").tag(Date.DateComponent.year)
+                Text("week").tag(Date.DateComponent.week)
+                Text("month").tag(Date.DateComponent.month)
+                Text("year").tag(Date.DateComponent.year)
             }
             .onChange(of: chartInformation.chartRange, perform: { _ in
                 HapticFeedbackHelper.buttonFeedback()

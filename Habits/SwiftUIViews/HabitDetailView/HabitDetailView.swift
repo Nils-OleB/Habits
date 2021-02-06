@@ -80,7 +80,7 @@ struct HabitDetailView: View {
         }
         .navigationTitle(cdHabit.titel ?? "")
         .navigationBarItems(trailing:
-                                Button("Edit", action: {
+                                Button("edit", action: {
                                     HapticFeedbackHelper.buttonFeedback()
                                     editHabitViewVisible = true
                                 })

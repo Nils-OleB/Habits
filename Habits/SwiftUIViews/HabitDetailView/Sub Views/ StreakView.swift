@@ -14,24 +14,25 @@ struct StreakView: View {
     
     var body: some View {
         HStack {
-            StreakCircleView(text: "Goals \nmet",
+            StreakCircleView(text: "goals met",
                              number: 5000)
-            StreakCircleView(text: "Current \nstreak",
+            StreakCircleView(text: "current streak",
                              number: 50)
-            StreakCircleView(text: "Longest \nstreak",
+            StreakCircleView(text: "longest streak",
                              number: 500)
         }
     }
 }
 
 private struct StreakCircleView: View {
-    var text: String
+    var text: LocalizedStringKey
     var number: Int
     
     var body: some View {
         VStack {
-            Text(text.uppercased())
+            Text(text)
                 .font(.footnote)
+                .textCase(.uppercase)
             
             ZStack {
                 Circle()

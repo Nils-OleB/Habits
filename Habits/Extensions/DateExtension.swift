@@ -54,7 +54,7 @@ extension Date {
     
     var dayMonthYearString3: String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd. MMMM yyyy"
+        dateFormatter.dateFormat = "d. MMMM yyyy"
         return dateFormatter.string(from: self).uppercased()
     }
     

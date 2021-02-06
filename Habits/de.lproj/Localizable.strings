@@ -1,0 +1,44 @@
+/* 
+  Localizable.strings
+  Habits
+
+  Created by Nils-Ole Bickel on 06.02.21.
+  
+*/
+
+"today" = "Heute";
+"this week" = "diese Woche";
+"this month" = "diesen Monat";
+"this year" = "dieses Jahr";
+
+"day" = "Tag";
+"week" = "Woche";
+"month" = "Monat";
+"year" = " Jahr";
+
+"daily" = "Täglich";
+"weekly" = "Wöchentlich";
+"monthly" = "Monatlich";
+"yearly" = "Jährlich";
+
+"create custom habit" = "Eigende Gewohnheit erstellen";
+"create" = "Erstellen";
+"name" = "Name";
+"name your habit" = "Bennene deine Gewohnheit";
+"symbol" = "Symbol";
+"color" = "Farbe";
+"goal period" = "Zielzeitraum";
+"goal" = "Ziel";
+
+"done" = "Fertig";
+"cancel" = "Abbrechen";
+"save" = "Sichern";
+"edit" = "Bearbeiten";
+
+"archive" = "Archivieren";
+"reset" = "Zurücksetzen";
+"delete" = "Löschen";
+
+"goals met" = "Ziele \nerreichet";
+"current streak" = "Aktuelle \nSerie";
+"longest streak" = "Längste \nSerie";

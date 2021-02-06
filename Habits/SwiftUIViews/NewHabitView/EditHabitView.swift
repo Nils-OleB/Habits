@@ -45,7 +45,7 @@ struct EditHabitView: View {
             VStack(spacing: 20) {
                 HStack {
                     HStack {
-                        Text("Create")
+                        Text(cdHabit == nil ? "create" : "edit")
                             .font(.system(size: 30, weight: .bold))
                         Spacer()
                     }
@@ -111,12 +111,12 @@ private struct NameView: View {
     var body: some View {
         VStack {
             HStack {
-                Text("Name")
+                Text("name")
                     .font(.system(size: 25, weight: .bold))
                 Spacer()
             }
             
-            TextField("Name your habit", text: $name)
+            TextField("name your habit", text: $name)
                 .padding()
                 .frame(height: 50)
                 .background(Color.gray.opacity(0.2))
@@ -133,7 +133,7 @@ private struct SymbolView: View {
 
     var body: some View {
         VStack {
-            Text("Symbol")
+            Text("symbol")
                 .font(.system(size: 25, weight: .bold))
             ZStack {
                 Circle()
@@ -161,7 +161,7 @@ private struct ColorView: View {
     
     var body: some View {
         VStack {
-            Text("Color")
+            Text("color")
                 .font(.system(size: 25, weight: .bold))
             
             
@@ -186,16 +186,16 @@ private struct GoalPeriodView: View {
     var body: some View {
         VStack {
             HStack {
-                Text("Goal period")
+                Text("goal period")
                     .font(.system(size: 25, weight: .bold))
                 Spacer()
             }
             
             Picker(selection: $goalPeriod, label: EmptyView()) {
-                Text("Daily").tag(0)
-                Text("Weekly").tag(1)
-                Text("Monthly").tag(2)
-                Text("Yearly").tag(3)
+                Text("daily").tag(0)
+                Text("weekly").tag(1)
+                Text("monthly").tag(2)
+                Text("yearly").tag(3)
             }
             .onChange(of: goalPeriod, perform: { _ in
                 HapticFeedbackHelper.buttonFeedback()
@@ -238,7 +238,7 @@ private struct GoalView: View {
     var body: some View {
         VStack {
             HStack {
-                Text("Goal")
+                Text("goal")
                     .font(.system(size: 25, weight: .bold))
                 Spacer()
             }
@@ -257,7 +257,7 @@ private struct GoalView: View {
                     Spacer()
                     HStack {
                         Spacer()
-                        Stepper("Stepper", value: $goal, in: 1...100 )
+                        Stepper("stepper", value: $goal, in: 1...100 )
                             .labelsHidden()
                             .onChange(of: goal, perform: { _ in
                                 HapticFeedbackHelper.buttonFeedback()
@@ -281,24 +281,30 @@ private struct SaveCancelView: View {
             Button(action: cancelAction,
                    label: {
                     GeometryReader { geometry in
-                        Text("Cancel")
+                        Text("cancel")
+                            .padding()
                             .frame(width: geometry.size.width, height: 50)
                             .background(Color.gray.opacity(0.2))
                             .cornerRadius(10)
                             .font(.system(size: 18, weight: .bold))
                             .foregroundColor(Color(.label))
+                            .minimumScaleFactor(0.5)
+                            .lineLimit(1)
+                        
                     }
                    })
             
             Button(action: saveAction,
                    label: {
                     GeometryReader { geometry in
-                        Text("Save")
+                        Text("save")
+                            .padding()
                             .frame(width: geometry.size.width, height: 50)
                             .background(Color.green.opacity(0.5))
                             .cornerRadius(10)
                             .font(.system(size: 18, weight: .bold))
                             .foregroundColor(Color(.label))
+                            .minimumScaleFactor(0.5)
                     }
                    })
         }
@@ -316,39 +322,42 @@ private struct DeleteView: View {
             Button(action: archiveAction,
                    label: {
                     GeometryReader { geometry in
-                        Text("Archive")
+                        Text("archive")
                             .padding()
                             .frame(width: geometry.size.width, height: 50)
                             .background(Color.blue.opacity(0.5))
                             .cornerRadius(10)
                             .font(.system(size: 18, weight: .bold))
                             .foregroundColor(Color(.label))
+                            .minimumScaleFactor(0.5)
                     }
                    })
             
             Button(action: resetAction,
                    label: {
                     GeometryReader { geometry in
-                        Text("Reset")
+                        Text("reset")
                             .padding()
                             .frame(width: geometry.size.width, height: 50)
                             .background(Color.yellow.opacity(0.5))
                             .cornerRadius(10)
                             .font(.system(size: 18, weight: .bold))
                             .foregroundColor(Color(.label))
+                            .minimumScaleFactor(0.5)
                     }
                    })
             
             Button(action: deleteAction,
                    label: {
                     GeometryReader { geometry in
-                        Text("Delete")
+                        Text("delete")
                             .padding()
                             .frame(width: geometry.size.width, height: 50)
                             .background(Color.red.opacity(0.5))
                             .cornerRadius(10)
                             .font(.system(size: 18, weight: .bold))
                             .foregroundColor(Color(.label))
+                            .minimumScaleFactor(0.5)
                     }
                    })
         }

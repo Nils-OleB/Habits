@@ -34,7 +34,8 @@ struct HabitHomeView: View {
                     }
                     .padding(EdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20))
                 }
-//                .navigationTitle("Home")//Date().dayMonthYearString3)
+                .navigationTitle(Date().dayMonthYearString3)
+                .navigationBarTitleDisplayMode(.large)
             }
         }
     }
@@ -59,6 +60,15 @@ struct HabitHomeCardView: View {
                     Text(getTitleString())
                         .font(.title)
                         .bold()
+                        .textCase(.uppercase)
+                    Spacer()
+                }
+                
+                HStack {
+                    Text(getDateString())
+                        .font(.footnote)
+                        .bold()
+                        .foregroundColor(Color.gray.opacity(0.5))
                     Spacer()
                 }
                 
@@ -85,20 +95,29 @@ struct HabitHomeCardView: View {
         }
     }
     
-    func getTitleString() -> String {
+    func getTitleString() -> LocalizedStringKey {
         switch goalPeriod {
         case .daily:
-            return "TODAY"
-//            return Date().dayMonthYearString3
+            return "today"
         case .weekly:
-            return "THIS WEEK"
-//            return Date().weekString
+            return "this week"
         case .monthly:
-            return "THIS MONTH"
-//            return Date().monthYearString2
+            return "this month"
         case .yearly:
-            return "THIS YEAR"
-//            return Date().yearString
+            return "this year"
+        }
+    }
+    
+    func getDateString() -> String {
+        switch goalPeriod {
+        case .daily:
+            return Date().dayMonthYearString3
+        case .weekly:
+            return Date().weekString
+        case .monthly:
+            return Date().monthYearString2
+        case .yearly:
+            return Date().yearString
         }
     }
 }

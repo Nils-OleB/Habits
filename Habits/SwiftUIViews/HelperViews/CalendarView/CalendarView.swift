@@ -34,7 +34,7 @@ struct CalendarView<Content: View>: View {
                            })
                     Spacer()
                     if let doneAction = doneAction {
-                        Button("Done", action: doneAction)
+                        Button("done", action: doneAction)
                             .font(.title3)
                     }
                 }

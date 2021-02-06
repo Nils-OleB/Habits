@@ -1,0 +1,44 @@
+/* 
+  Localizable.strings
+  Habits
+
+  Created by Nils-Ole Bickel on 06.02.21.
+  
+*/
+
+"today" = "today";
+"this week" = "this week";
+"this month" = "this month";
+"this year" = "this year";
+
+"day" = "Day";
+"week" = "Week";
+"month" = "Month";
+"year" = " Year";
+
+"daily" = "Daily";
+"weekly" = "Weekly";
+"monthly" = "Monthly";
+"yearly" = "Yearly";
+
+"create custom habit" = "Create custom habit";
+"create" = "Create";
+"name" = "Name";
+"name your habit" = "Name your habit";
+"symbol" = "Symbol";
+"color" = "Color";
+"goal period" = "Goal period";
+"goal" = "Goal";
+
+"done" = "Done";
+"cancel" = "Cancel";
+"save" = "Save";
+"edit" = "Edit";
+
+"archive" = "Archive";
+"reset" = "Reset";
+"delete" = "Delete";
+
+"goals met" = "Goals \nmet";
+"current streak" = "Current \nstreak";
+"longest streak" = "Longest \nstreak";
