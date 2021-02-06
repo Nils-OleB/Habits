@@ -32,6 +32,7 @@ struct ContentView: View {
                     Image(systemName: "chart.bar.fill")
                 }
         }
+        .accentColor(.habitsPrimaryColor)
     }
 }
 
@@ -40,6 +41,7 @@ struct ContentView_Previews: PreviewProvider {
         Group {
 //            ContentView()
 //                .preferredColorScheme(.dark)
+            
 //                .previewDevice("iPhone 12 Pro")
 //                .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 //

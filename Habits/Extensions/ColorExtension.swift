@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 extension UIColor {
     public convenience init(hex: String?) {
@@ -53,5 +54,11 @@ extension UIColor {
             blue:  .random(in: 0...1),
             alpha: 1.0
         )
+    }
+}
+
+extension Color {
+    static var habitsPrimaryColor: Color {
+        Color(UIColor(named: "HabitsPrimaryColor") ?? .systemPink)
     }
 }

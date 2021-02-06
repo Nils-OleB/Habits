@@ -19,7 +19,6 @@
 		7D4914C425B5C5D300323B77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D4914C325B5C5D300323B77 /* Assets.xcassets */; };
 		7D4914C725B5C5D300323B77 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D4914C625B5C5D300323B77 /* Preview Assets.xcassets */; };
 		7D4914C925B5C5D300323B77 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4914C825B5C5D300323B77 /* Persistence.swift */; };
-		7D49150025B5C74700323B77 /* Old.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4914FF25B5C74700323B77 /* Old.swift */; };
 		7D49150E25B5C8D400323B77 /* CDHabitEntry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D49150625B5C8D300323B77 /* CDHabitEntry+CoreDataProperties.swift */; };
 		7D49150F25B5C8D400323B77 /* CDHabitEntry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D49150725B5C8D300323B77 /* CDHabitEntry+CoreDataClass.swift */; };
 		7D49151025B5C8D400323B77 /* Habits.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D49150825B5C8D300323B77 /* Habits.xcdatamodeld */; };
@@ -50,6 +49,7 @@
 		7DC6986625CC15AF00E5F20D /* HabitInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC6986525CC15AF00E5F20D /* HabitInformation.swift */; };
 		7DC6986925CC183000E5F20D /* DayInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC6986825CC183000E5F20D /* DayInformation.swift */; };
 		7DC6986C25CC19BB00E5F20D /* HabitButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC6986B25CC19BB00E5F20D /* HabitButtonStyle.swift */; };
+		7DC6987025CE995B00E5F20D /* AppColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DC6986F25CE995B00E5F20D /* AppColors.xcassets */; };
 		7DE120AD25B8548D005335D4 /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE120AC25B8548D005335D4 /* ColorHelper.swift */; };
 		7DE120B025B99B08005335D4 /* GoalPeriodHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE120AF25B99B08005335D4 /* GoalPeriodHelper.swift */; };
 		7DE120B525B9C2B0005335D4 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE120B425B9C2B0005335D4 /* Line.swift */; };
@@ -71,7 +71,6 @@
 		7D4914C625B5C5D300323B77 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7D4914C825B5C5D300323B77 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		7D4914CD25B5C5D300323B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7D4914FF25B5C74700323B77 /* Old.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Old.swift; sourceTree = "<group>"; };
 		7D49150625B5C8D300323B77 /* CDHabitEntry+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CDHabitEntry+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7D49150725B5C8D300323B77 /* CDHabitEntry+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CDHabitEntry+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7D49150925B5C8D300323B77 /* Habits.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Habits.xcdatamodel; sourceTree = "<group>"; };
@@ -103,6 +102,7 @@
 		7DC6986525CC15AF00E5F20D /* HabitInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitInformation.swift; sourceTree = "<group>"; };
 		7DC6986825CC183000E5F20D /* DayInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayInformation.swift; sourceTree = "<group>"; };
 		7DC6986B25CC19BB00E5F20D /* HabitButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitButtonStyle.swift; sourceTree = "<group>"; };
+		7DC6986F25CE995B00E5F20D /* AppColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppColors.xcassets; sourceTree = "<group>"; };
 		7DE120AC25B8548D005335D4 /* ColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
 		7DE120AF25B99B08005335D4 /* GoalPeriodHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalPeriodHelper.swift; sourceTree = "<group>"; };
 		7DE120B425B9C2B0005335D4 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
@@ -194,16 +194,13 @@
 			children = (
 				7D92F09125C18A3500552EA1 /* Habits.entitlements */,
 				7D4914BF25B5C5D000323B77 /* HabitsApp.swift */,
-				7D4914C125B5C5D000323B77 /* ContentView.swift */,
-				7DC6986025CC150500E5F20D /* Model */,
 				7D611EC425B605AD00A966C5 /* SwiftUIViews */,
-				7D4914FF25B5C74700323B77 /* Old.swift */,
-				7D37F4EA25B6E57200887DE6 /* ColorPickerColors.xcassets */,
-				7D4914C325B5C5D300323B77 /* Assets.xcassets */,
-				7D4914CD25B5C5D300323B77 /* Info.plist */,
 				7D49150325B5C8D300323B77 /* Core Data */,
+				7DC6986025CC150500E5F20D /* Model */,
+				7D4914CD25B5C5D300323B77 /* Info.plist */,
 				7D49151625B5C95800323B77 /* Extensions */,
 				7D49154A25B5CAAB00323B77 /* Helper */,
+				7DC6987225CE99CE00E5F20D /* Assets */,
 				7D4914C525B5C5D300323B77 /* Preview Content */,
 			);
 			path = Habits;
@@ -280,6 +277,7 @@
 		7D611EC425B605AD00A966C5 /* SwiftUIViews */ = {
 			isa = PBXGroup;
 			children = (
+				7D4914C125B5C5D000323B77 /* ContentView.swift */,
 				7D15BC9625B71F1300185143 /* HabitHomeView */,
 				7D15BC9525B71EFD00185143 /* NewHabitView */,
 				7D8AD15225B70321009B69BB /* HabitDetailView */,
@@ -327,6 +325,16 @@
 				7D49153025B5CA5C00323B77 /* HabitCalendarView.swift */,
 			);
 			path = "Sub Views";
+			sourceTree = "<group>";
+		};
+		7DC6987225CE99CE00E5F20D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7DC6986F25CE995B00E5F20D /* AppColors.xcassets */,
+				7D37F4EA25B6E57200887DE6 /* ColorPickerColors.xcassets */,
+				7D4914C325B5C5D300323B77 /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D37F4EB25B6E57200887DE6 /* ColorPickerColors.xcassets in Resources */,
+				7DC6987025CE995B00E5F20D /* AppColors.xcassets in Resources */,
 				7D4914C725B5C5D300323B77 /* Preview Assets.xcassets in Resources */,
 				7D4914C425B5C5D300323B77 /* Assets.xcassets in Resources */,
 			);
@@ -429,7 +438,6 @@
 				7D49154D25B5CAAB00323B77 /* HapticFeedbackHelper.swift in Sources */,
 				7DC6986925CC183000E5F20D /* DayInformation.swift in Sources */,
 				7DE120B825B9C7CE005335D4 /* HabitListView.swift in Sources */,
-				7D49150025B5C74700323B77 /* Old.swift in Sources */,
 				7D49151025B5C8D400323B77 /* Habits.xcdatamodeld in Sources */,
 				7D49154525B5CA5C00323B77 /* AnimationCompletionModifier.swift in Sources */,
 				7DC6986325CC159700E5F20D /* HabitCircleView.swift in Sources */,

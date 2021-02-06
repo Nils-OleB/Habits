@@ -65,7 +65,7 @@ struct HabitHomeCardView: View {
                 Line(direction: .horizontal)
                     .stroke(style: StrokeStyle(lineWidth: 1))
                     .frame(height: 1)
-                    .foregroundColor(.red)
+                    .foregroundColor(.habitsPrimaryColor)
                 
                 HabitDailyCircleView()
                     .frame(height: circleSize)
@@ -74,7 +74,7 @@ struct HabitHomeCardView: View {
                     Line(direction: .horizontal)
                         .stroke(style: StrokeStyle(lineWidth: 1))
                         .frame(height: 1)
-                        .foregroundColor(.red)
+                        .foregroundColor(.habitsPrimaryColor)
                     
                     Spacer()
                     
